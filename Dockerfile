@@ -25,7 +25,7 @@ nano \
 ca-certificates \
 nginx \
 php7.1 php7.1-fpm php7.1-common php7.1-tokenizer php7.1-curl php7.1-gd php7.1-intl php7.1-json php7.1-mbstring php7.1-mcrypt php7.1-mysql php7.1-opcache php7.1-pgsql php7.1-soap php7.1-sqlite3 php7.1-xml php7.1-xmlrpc php7.1-xsl php7.1-zip \
-php-imagick php-soap php-mcrypt php-zip php-bcmath postfix libssh2-1 php-ssh2 && \
+php-imagick ghostscript php-soap php-mcrypt php-zip php-bcmath postfix libssh2-1 php-ssh2 && \
 cp -r /etc/php /etc/php.orig && \
 cp -r /etc/nginx /etc/nginx.orig && \
 apt-get autoclean && apt-get -y autoremove && \
