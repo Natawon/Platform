@@ -52,4 +52,4 @@ COPY fs /
 EXPOSE 80 443
 
 ADD run.sh /root/run.sh
-CMD /bin/sh /root/run.sh
+CMD /bin/sh /root/run.sh ["postfix","start"]
