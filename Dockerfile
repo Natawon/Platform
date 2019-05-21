@@ -56,3 +56,4 @@ EXPOSE 80 443
 ADD run.sh /root/run.sh
 CMD /bin/sh /root/run.sh 
 ENTRYPOINT ["/docker-entrypoint.sh"]
+RUN ["chmod", "+x", "/docker-entrypoint.sh"]
