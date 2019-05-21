@@ -48,10 +48,10 @@ RUN npm install -g sass
 
 COPY fs /
 # Copy Entrypoint script in the container
-COPY docker-entrypoint.sh /docker-entrypoint.sh
+#COPY docker-entrypoint.sh /docker-entrypoint.sh
 
-ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
-RUN ["chmod", "+x", "/docker-entrypoint.sh"]
+#ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
+#RUN ["chmod", "+x", "/docker-entrypoint.sh"]
 
 # NGINX ports
 EXPOSE 80 443
