@@ -47,9 +47,12 @@ RUN npm install -g sass
 # VOLUME ["/var/www"]
 
 COPY fs /
+# Copy Entrypoint script in the container
+COPY ./docker-entrypoint.sh /
 
 # NGINX ports
 EXPOSE 80 443
 
 ADD run.sh /root/run.sh
-CMD /bin/sh /root/run.sh ["postfix","start"]
+CMD /bin/sh /root/run.sh 
+ENTRYPOINT ["/docker-entrypoint.sh"]
